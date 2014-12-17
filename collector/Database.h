@@ -63,7 +63,9 @@ class Database {
 	    SensorWarmwasserbereitungsZeit = 21,
 	    SensorWarmwasserBereitungen = 22,
 	    SensorPumpenModulation = 24,
-	    SensorWaermetauscherTemp = 25
+	    SensorWaermetauscherTemp = 25,
+	    SensorWarmwasserDurchfluss = 26,
+
 	} NumericSensors;
 
 	typedef enum {
@@ -128,6 +130,7 @@ class Database {
 	static const unsigned int readingTypePressure = 4;
 	static const unsigned int readingTypeTime = 5;
 	static const unsigned int readingTypeCount = 6;
+	static const unsigned int readingTypeVolume = 7;
 
 	std::map<unsigned int, time_t> m_lastWrites;
 	std::map<unsigned int, float> m_numericCache;
