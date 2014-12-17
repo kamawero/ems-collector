@@ -245,7 +245,8 @@ Database::createSensorRows()
 		  "Kesselpumpenmodulation", readingTypePercent, "%", 0);
     query.execute(SensorWaermetauscherTemp, sensorTypeNumeric,
 		  "Temperatur Ausgang Waermetauscher", readingTypeTemperature, "°C", 1);
-
+    query.execute(SensorWarmwasserDurchfluss, sensorTypeNumeric,
+  		  "Warmwasserdurchfluss", readingTypeVolume, "l/min", 1);
 
     /* Boolean sensors */
     query.execute(SensorFlamme, sensorTypeBoolean, "Flamme");
